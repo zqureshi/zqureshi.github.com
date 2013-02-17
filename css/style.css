@@ -22,6 +22,9 @@ body {
 #social-links a {
   color: inherit;
   text-decoration: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  -mos-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 #social-links a:hover,
 #social-links a:focus {
