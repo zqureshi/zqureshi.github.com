@@ -12,49 +12,6 @@
   <link rel="stylesheet" href="css/bootstrap-responsive.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/style.css">
-
-  <script>
-  (function () {
-    var config = {
-      "Trekkie": {
-        "appName": "zqureshi-personal"
-      }
-    };
-    var tricorder_version = "2016.07.22.1";
-    var tricorder = window.tricorder = window.tricorder || [];
-    if (tricorder.integrations) {
-      return;
-    }
-    tricorder.methods = [
-      "identify",
-      "page",
-      "track"
-    ];
-    tricorder.factory = function (method) {
-      return function() {
-        var args = Array.prototype.slice.call(arguments);
-        args.unshift(method);
-        tricorder.push(args);
-        return tricorder;
-      }
-    };
-    for (var i = 0; i < tricorder.methods.length; i++) {
-      var key = tricorder.methods[i];
-      tricorder[key] = tricorder.factory(key);
-    }
-    tricorder.load = function(config) {
-      tricorder.config = config;
-      var script = document.createElement("script");
-      script.type = "text/javascript";
-      script.async = true;
-      script.src = "/js/tricorder.js?v=" + tricorder_version;
-      var first = document.getElementsByTagName("script")[0];
-      first.parentNode.insertBefore(script, first);
-    }
-    tricorder.load(config);
-    tricorder.page();
-  })();
-  </script>
 </head>
 <body>
 <header>
