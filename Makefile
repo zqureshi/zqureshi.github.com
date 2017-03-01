@@ -1,4 +1,8 @@
-PUBLISH_OPTS = --no-preserve --exclude='.git*' --exclude='Makefile' --exclude='*.swp'
+PUBLISH_OPTS = --no-preserve \
+	--exclude='.git*' \
+	--exclude='Makefile' \
+	--exclude='*.swp' \
+	--add-header="Cache-Control: public, max-age=86400, must-revalidate"
 
 .PHONY: publish clean
 
