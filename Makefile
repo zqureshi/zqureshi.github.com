@@ -1,4 +1,4 @@
-PUBLISH_OPTS = --no-preserve --exclude='.git*'
+PUBLISH_OPTS = --no-preserve --exclude='.git*' --exclude='Makefile' --exclude='*.swp'
 
 .PHONY: publish
 
