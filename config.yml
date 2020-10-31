@@ -17,5 +17,6 @@ params:
       url: "https://github.com/zqureshi"
     - name: "til"
       url: "https://til.zqureshi.in"
+      sameTab: true
     - name: "linkedin"
       url: "https://www.linkedin.com/in/zeeshanq/"
