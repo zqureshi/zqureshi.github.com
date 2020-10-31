@@ -1,0 +1,19 @@
+baseURL: "https://zqureshi.in/"
+title: "Zeeshan Qureshi"
+theme: "papermod"
+languageCode: "en-us"
+
+enableRobotsTXT: true
+
+params:
+  disableThemeToggle: true
+  defaultTheme: "dark"
+  profileMode:
+    enabled: true
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/zqureshi"
+    - name: "til"
+      url: "https://til.zqureshi.in"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/zeeshanq/"
