@@ -8,6 +8,8 @@ enableRobotsTXT: true
 params:
   disableThemeToggle: true
   defaultTheme: "dark"
+  assets:
+    favicon: "gravatar.jpg"
   profileMode:
     enabled: true
   socialIcons:
